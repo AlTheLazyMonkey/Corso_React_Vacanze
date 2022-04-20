@@ -4,7 +4,10 @@ import Holiday from "./components/Holiday";
 function App() {
   return (
     <section className="section-center">
-      <div>APP</div>
+      <div className="container">
+        <Title text="Le nostre vanceze"></Title>
+        <Holiday></Holiday>
+      </div>
     </section>
   );
 }

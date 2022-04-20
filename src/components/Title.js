@@ -1,7 +1,18 @@
 import React from "react";
 
-const Title = () => {
-  return <div>Titolo</div>;
+const titleStyle = {
+  width: 'fit-content',
+  fontVariant: 'small-caps',
+  position: 'relative',
+  diaplay: 'grid',
+  placeItems: 'center'
+}
+
+const Title = ({text}) => {
+  return <div style={titleStyle}>
+    <h4>{text || 'Titolo'}</h4>
+    <div className="underline"></div>
+  </div>;
 };
 
 export default Title;
